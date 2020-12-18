@@ -9,7 +9,7 @@ module.exports = (function setup() {
     var d = {}, v;
     Object.keys(orig).forEach(function c(k) {
       v = orig[k];
-      if (d[k] === v) { return d; }
+      if (d[k] === v) { return; }
       if (v && f(v)) { v = p(v.bind(orig)); }
       d[k] = v;
     });

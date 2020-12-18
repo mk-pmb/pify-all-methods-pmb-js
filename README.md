@@ -18,8 +18,10 @@ This module exports one function:
 ### pam(orig)
 
 Returns a flat copy of `orig`, except all own enumerable properties that are
+
 * functions,
 * and different from their same-named twin on the Object prototype
+
 are replaced with a `pify`-ed bound (to `orig`) version of themselves.
 
 

@@ -1,5 +1,5 @@
 { "name": "pify-all-methods-pmb",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Promisify (using pify) bound versions of almost all methods of an object.",
   "keywords": [],
 
