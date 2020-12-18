@@ -6,7 +6,9 @@
 module.exports = (function setup() {
   var p = require('pify'), f = require('is-fn');
   function pam(orig) {
+    if (!orig) { return orig; }
     var d = {}, v;
+    if (Array.isArray(orig)) { d = []; }
     Object.keys(orig).forEach(function c(k) {
       v = orig[k];
       if (d[k] === v) { return; }
